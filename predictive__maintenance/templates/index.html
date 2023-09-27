@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Machine Failure Prediction</h1>
+    <form action="{{ url_for('home')}}" method="post">
+
+        <label>Enter UDI :</label>
+        <input type="text" name="UDI">
+            <br>
+        <label>Enter Product_id :</label>
+        <input type="text" name="Product_id">
+        <br>
+        <label>Enter Type :</label>
+        <input type="text" name="Type" placeholder="M/L/H" required>
+        <br>
+        <label>Enter Air_temp :</label>
+        <input type="text" name="Air_temp" required>
+        <br>
+        <label>Enter Process_temp :</label>
+        <input type="text" name="Process_temp" required>
+        <br>
+        <label>Enter Rotational_speed :</label>
+        <input type="text" name="Rotational_speed" required>
+        <br>
+        <label>Enter Torque :</label>
+        <input type="text" name="Torque" required>
+        <br>
+        <label>Enter Tool_wear :</label>
+        <input type="text" name="Tool_wear" required>
+        <br>
+        <label>Enter TWF :</label>
+        <input type="text" name="TWF" required>
+        <br>
+        <label>Enter HDF :</label>
+        <input type="text" name="HDF" required>
+        <br>
+        <label>Enter PWF :</label>
+        <input type="text" name="PWF" required>
+        <br>
+        <label>Enter OSF :</label>
+        <input type="text" name="OSF" required>
+        <br>
+        <label>Enter RNF :</label>
+        <input type="text" name="RNF">
+        <br>
+        <input type="submit" value="submit">
+    <h3>Machine Status : {{result}}</h3>
+    
+</body>
+</html>
